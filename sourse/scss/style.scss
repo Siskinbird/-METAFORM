@@ -1,0 +1,197 @@
+//Обнуление стандартных стилей браузера
+@import "reset.scss"; 
+
+//Переменные
+$grayA: #999999;
+$grayB: #6B6B6B; //links, paragraphs, maincolor
+$grayC: #222222;
+$bgBlock: #E5E5E5; // background catalog
+$brandColor: #6CA09F; // brand name color
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: $grayB;
+    font-family: 'Montserrat';
+}
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden; // управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров.
+}
+
+.line {
+    margin-top: 60px;
+}
+._container {
+    max-width: 1300px; // задаём максимальную ширину контейнера
+    margin: 0px auto; // выравнивание контейнера по середине
+}
+.header_container {
+    display: flex;
+    min-height: 130px;
+    align-items: center;  // выравниваем объекты в контейнере по центру
+    background: url('/img/BG/bg-pattern-2.png') repeat;
+}
+
+.header_container_left {
+    display: flex;
+    flex-direction: row;
+    flex: 0 50%; 
+}
+
+.left__block {
+    display: flex;
+    width: 215px;
+    align-items: center;
+    flex-direction: column;
+
+    .header_brand_description {
+        text-align: left;
+        text-transform: uppercase;
+        font-weight: 550;
+        line-height: 145%;
+    }
+}
+
+.right__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 120px;
+}
+
+.header_email {
+    display: inline-flex;
+    align-items: center;
+
+    font-size: 20px;
+    line-height: 145%;
+
+    .header_email_address {
+        margin-left: 10px;
+        a {
+            color: $grayB;
+            
+        }
+        span {
+            color: $brandColor;
+        }
+    }
+}
+
+a:hover {
+    text-decoration: to-lower-case($string: "ffewf");
+}
+
+.header_email_ico {
+    padding-top: 5px;
+}
+.header_phone_ico {
+    padding-top: 5px;
+}
+
+.header_phone {
+    display: inline-flex;
+    align-items: center;
+   // margin: 10px 35px;
+    font-size: 20px;
+    line-height: 145%;
+    .header_phone_address {
+        margin-left: 10px;
+        a {
+            color: $grayB;
+        }
+    }
+}
+
+.header_container_right {
+    .menu_list {
+        display: inline-flex;
+    }
+    .header_menu {
+        margin-left: 120px;
+        .menu_link {
+            margin-right: 30px;
+            color: $grayB;
+            line-height: 145%;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wrapper {
+    position: absolute;
+    margin: 30px 30px;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .header_container {
+        height: 100%;
+        display: inline-flex;
+    }
+    .header_container_left {
+        display: flex;
+        //flex-direction: column;
+        .left_block {
+            display: flex;
+            flex-direction: column;
+
+            .header_brand{
+                align-items: center;
+            }
+
+            .header_brand_description {
+                align-items: center;
+                font-size: 14px;
+                color: $grayB;
+            }
+        }
+    }
+}
+
+.main {
+    flex: 1 1 auto;
+}
+ */

@@ -1,0 +1,216 @@
+/* Обнуление стилей браузера */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    color: #6B6B6B;
+    font-family: "Montserrat";
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+    color: #6B6B6B;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+  /* --------------------------------------------------------------------- */
+
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+   padding: 0px 20px;
+}
+
+/* -------------------------------------HEADER SECTION--------------------------------- */
+
+.header {
+    background: url("/img/BG/bg-pattern-2.png") repeat;
+    box-shadow: 0px 6px 14px -5px rgba(0, 0, 51, 0.2);
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    align-items: center;  
+    flex-wrap: wrap;  
+}
+
+.brand {
+    padding: 5px;
+}
+
+.description {
+    width: 215px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 550;
+    line-height: 145%;
+}
+
+.ico {
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+    align-items: flex-end;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    padding: 16px 5px 5px 5px;
+
+   
+}
+
+.e-mail span {
+    color: #6CA09F;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list li{
+    margin-right: 30px;
+}
+
+/* link animation */
+
+.menu__list a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, #6CA09F);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.menu__list a:hover {
+    background-size: 100% 2px;
+}
+
+
+/* -------------------------------------END OF HEADER SECTION--------------------------------- */
+
+/* ----------------------------------------SERVICES SECTION---------------------------------- */
+.services {
+    margin-top: 120px;
+}
+
+.service__body {
+    
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.left__column {
+}
+
+.right__column {
+    margin-left: 20px;
+}
+
+.service__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+/*     max-width: 100%;
+    min-width: 50%; */
+    width: 512px;
+    height: 125px;
+    border: 2px solid #C4C4C4;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.item__logo {
+    width: 127px;
+    height: 102px;
+}
+.item__text {
+    padding: 20px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 145%;
+    letter-spacing: 4.5%;
+    text-align: center;
+    width: 349px;
+    height: 102px;
+    border: 2px solid #6CA09F;
+    border-radius: 12px;
+}
