@@ -1,0 +1,32 @@
+            <section class="back__form">
+                <form  id="form" class="form container">
+                    <h2 class="form__title">Отправка данных на почту</h2>
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Имя<span>*</span></label>
+                        <input id="formName" required type="text" name="name" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">E-mail<span>*</span></label>
+                        <input id="formEmail" required type="text" name="email" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formPhone" class="form__label">Телефон<span>*</span></label>
+                        <input id="formPhone" required type="text" name="phone" class="form__input">
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Сообщение:</label>
+                        <textarea id="formMessage" name="message" class="form__input"></textarea>
+                    </div>
+
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input id="formAgreement" required checked type="checkbox" name="agreement" class="checkbox__input ">
+                            <label for="formAgreement" class="checkbox__label">Я даю своё согласие на обработку персональных данных 
+                                в соответствии с <a href="#">Условиями</a><span>*</span>
+                            </label>
+                        </div>
+                    </div>    
+                    <button type="button" class="form__button" id="sendForm">Отправить</button>               
+
+                </form>
+            </section>
