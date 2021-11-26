@@ -61,6 +61,30 @@
             </div>
         </header>
         <!-- End of header section -->
+        <!-- SLIDER OMAGAD!!! MY FIRST SLIDER -->
+
+        <div class="slider container">
+            <div class="slider__item">
+                <img src="/img/SliderPhoto/DSC05403.jpg" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="/img/SliderPhoto/DSC05404.jpg" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="/img/SliderPhoto/DSC05410.jpg" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="/img/SliderPhoto/DSC05406.jpg" alt="">
+            </div>
+            <div class="slider__item">
+                <img src="/img/SliderPhoto/DSC05408.jpg" alt="">
+            </div>
+        </div>
+
+
+
+
+
         <!-- Main block -->
         <main>
             <!-- Services section -->
@@ -127,32 +151,28 @@
             <!-- Feedback section -->
             <section class="back__form">
                 <form  action="sender.php" method="post">
-                    <h2 class="form__title">Отправка данных на почту</h2>
-                    <!-- <div class="form__item"> -->
-                        <!-- <label for="formName" class="form__label">Имя<span>*</span></label> -->
+                    <h2 class="form__title">Остались вопросы?<br> Мы Вам перезвоним!</h2>
+                    <div class="form__item">
                         <input type="text" name="name" class="form__input" placeholder="Имя..." required>
-                    <!-- </div> -->
-                    <!-- <div class="form__item"> -->
-                        <!-- <label for="formEmail" class="form__label">E-mail<span>*</span></label> -->
+                    </div>
+                    <div class="form__item">
                         <input type="email" name="email" class="form__input" placeholder="E-mail..." required>
-                   <!--  </div> -->
-                    <!-- <div class="form__item"> -->
-                        <!-- <label for="formPhone" class="form__label">Телефон<span>*</span></label> -->
-                        <input id="phone" name="phone" type="text" class="form__input">
-                    <!-- </div> -->
-                    <!-- <div class="form__item"> -->
-                        <!-- <label for="formMessage" class="form__label">Сообщение:</label> -->
-                        <textarea name="message" placeholder="Сообщение..." class="form__input"></textarea>
-                    <!-- </div> -->
+                    </div>
+                    <div class="form__item">
+                        <input id="phone" name="phone" type="text" class="form__input" placeholder="Телефон">
+                    </div>
+                    <div class="form__item">
+                        <textarea name="message" placeholder="Сообщение:" class="form__input"></textarea>
+                    </div>
 
-                    <!-- <div class="form__item"> -->
-                        <!-- <div class="checkbox"> -->
+                    <div class="form__item">
+                        <div class="checkbox">
                             <input id="formAgreement" required checked type="checkbox" name="agreement" class="checkbox__input ">
                             <label for="formAgreement" class="checkbox__label">Я даю своё согласие на обработку персональных данных 
                                 в соответствии с <a href="#">Условиями</a><span>*</span>
                             </label>
-                        <!-- </div> -->
-                    <!-- </div> -->    
+                        </div>
+                    </div>    
                     <button type="button" class="form__button">Отправить</button>
                     <div class="status"></div>               
 
@@ -176,6 +196,6 @@
 
     </div>
 
-    
+    <script src="js/slick.min.js"></script>
 </body>
 </html>

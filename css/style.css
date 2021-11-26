@@ -34,7 +34,15 @@
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
-  
+
+/* body {
+  height: 100vh;
+  background-color: #a7c1b5;
+  background-image: radial-gradient(#ffeede 1px, rgba(255, 255, 255, 0) 1px);
+  background-size: 5px 5px;
+} */
+
+
   input, button, textarea {
     font-family: inherit;
   }
@@ -172,6 +180,91 @@
 
 /* -------------------------------------END OF HEADER SECTION--------------------------------- */
 
+/* ----------------------------------------SLIDER SECTION------------------------------------ */
+
+.slider {
+  position: relative;
+  padding: 20px 50px;
+}
+.slider .slick-arrow{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  margin: -25px 0px 0px 0px;
+  width: 30px;
+  height: 50px;
+}
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+/* Стрелка влево */
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('/img/SliderPhoto/arrow-left.svg') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('/img/SliderPhoto/arrow-right.svg') 0 0 / 100% no-repeat;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li{
+  list-style: none;
+  margin: 0 5px;
+}
+/* Активная точка */
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid var(--brandColor);
+}
+/* Элемент точки */
+.slider .slick-dots li button{
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: var(--brandColor);
+  border-radius: 50%;
+}
+
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+
+
+
+
+
+/* ----------------------------------------END OF SLIDER SECTION------------------------------------ */
+
+
 /* ----------------------------------------SERVICES SECTION---------------------------------- */
 .services {
   margin-top: 120px;
@@ -227,14 +320,12 @@
   color: #6B6B6B;
   padding: 30px 0;
 }
-.form__body {
-}
-.container {
-}
+
 .form__title {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
+  text-align: center;
 }
 .form__item {
   margin-bottom: 20px;
@@ -270,12 +361,6 @@ textarea.form__input{
   padding: 12px;
 }
 
-
-
-.checkbox {
-}
-.checkbox__input {
-}
 .checkbox__label {
   font-size: 16px;
   line-height: 140%;

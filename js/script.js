@@ -1,5 +1,7 @@
 jQuery(document).ready(function () {
-     
+     $('.slider').slick({
+		 dots:true
+	 });
      $("#phone").mask("+7 (999) 999-9999"); 
     
    
