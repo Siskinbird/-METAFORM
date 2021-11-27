@@ -106,7 +106,7 @@
 /* -------------------------------------HEADER SECTION--------------------------------- */
 
 .header {
-    background: url("../../img/BG/bg-pattern-2.png") repeat;
+    background: url("/metaform/img/bg/bgpattern2.png") repeat;
     box-shadow: 0px 6px 14px -5px rgba(0, 0, 51, 0.2);
 }
 
@@ -212,12 +212,12 @@
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url("../../img/SliderPhoto/arrow-left.svg") 0 0 / 100% no-repeat;
+  background: url('/metaform/img/sliderphoto/arrowleft.svg') 0 0 / 100% no-repeat;
 }
 /* Стрелка вправо */
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("../../img/SliderPhoto/arrow-right.svg") 0 0 / 100% no-repeat;
+  background: url("/metaform/img/sliderphoto/arrowright.svg") 0 0 / 100% no-repeat;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
@@ -266,6 +266,8 @@
 
 
 /* ----------------------------------------SERVICES SECTION---------------------------------- */
+
+/* TODO Очень сомнительный дизайн, надо будет обговорить нормальные современные карточик */
 .services {
   margin-top: 120px;
 }
@@ -349,7 +351,7 @@
   box-shadow: 0 0 15px var(--brandColor);
 }
 
-/* To do: Сделать красный рекваиред только после невалидных данных */
+/*TODO Сделать красный рекваиред только после невалидных данных */
 
 /* :required {                 
   box-shadow: 0 0 5px red;
@@ -402,6 +404,7 @@ textarea.form__input{
   box-shadow: 0 2px 0px #456362;
 }
 
+/* TODO Что там с попами не понятно... Если будет переписано под ajax тогда оставить */
 
 /* ПОПЫ */
 .overlay {
@@ -455,15 +458,20 @@ textarea.form__input{
 	transform: rotate(45deg);
 	left: -4px;
 }
+
+
+
+/* TODO Облепить footer ссылками (tel:  mailto:) */ 
+
+
 /* ------------------------------FOOTER SECTION----------------------- */
-/* Убрать высоту после наполнения контентом */
+
 .footer {
   text-align: center;
-  height: 220px;
-  background: url('/img/BG/bg-pattern-1.png') repeat;
+  background: url("/metaform/img/bgpattern1.png") repeat;
 }
+
 .footer__body {
-/*   display: flex; */
   margin-top: 30px;
   color: #fff;
   font-weight: 500;
@@ -486,6 +494,10 @@ textarea.form__input{
   padding: 5px;
   margin: 4px;
 }
+.phones__title .ico {
+  width: 20px;
+  height: 20px;
+}
 
 .phones__line {
   border-left: 1px solid #fff;
@@ -507,10 +519,17 @@ textarea.form__input{
   display: flex;
   flex-direction: row;
 }
+
 .worktime__title {
   padding: 5px;
   margin: 4px;
 }
+
+.worktime__title .ico {
+  width: 20px;
+  height: 20px;
+}
+
 .worktime__line {
   border-left: 1px solid #fff;
   height: 35%;
@@ -527,6 +546,9 @@ textarea.form__input{
 }
 
 /* -------------------------------ИНТЕРНЕТ АДРЕСА */
+.webaddress__title {
+  padding-top: 15px;
+}
 .webaddress__line {
   border-left: 1px solid #fff;
   height: 33%;
@@ -548,20 +570,29 @@ textarea.form__input{
 /* -------------------------------БРЕНД И КОПИРАЙТ */
 .footer__column {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.barand__image {
-  margin-right: 30px;
-}
+
 .brand__year {
   font-size: 34px;
   font-weight: 900;
 }
-.brand__year span {
+.brand__copyright span {
   color: var(--brandColor);
+  margin-right:5px;
 }
 .brand__copyright {
+  position: relative;
+  left: 40px;
+  top: -10px;
+  color: #C4C4C4;
+  font-size: 12px;
+}
+.brand__copyright .ico {
+  width: 15px;
+  height: 15px;
+  margin: 0;
 }
 
 
