@@ -24,7 +24,7 @@
   
   html, body {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
@@ -81,9 +81,7 @@
     font-size: inherit;
     font-weight: 400;
   }
-  span {
-    color: red;
-  }
+
 
   :root {
     --brandColor: #6CA09F;
@@ -108,7 +106,7 @@
 /* -------------------------------------HEADER SECTION--------------------------------- */
 
 .header {
-    background: url('/img/BG/bg-pattern-2.png') repeat;
+    background: url("../../img/BG/bg-pattern-2.png") repeat;
     box-shadow: 0px 6px 14px -5px rgba(0, 0, 51, 0.2);
 }
 
@@ -179,7 +177,9 @@
 
 
 /* -------------------------------------END OF HEADER SECTION--------------------------------- */
-
+.main {
+  flex: 1 1 auto;
+}
 /* ----------------------------------------SLIDER SECTION------------------------------------ */
 
 .slider {
@@ -212,12 +212,12 @@
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url('/img/SliderPhoto/arrow-left.svg') 0 0 / 100% no-repeat;
+  background: url("../../img/SliderPhoto/arrow-left.svg") 0 0 / 100% no-repeat;
 }
 /* Стрелка вправо */
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url('/img/SliderPhoto/arrow-right.svg') 0 0 / 100% no-repeat;
+  background: url("../../img/SliderPhoto/arrow-right.svg") 0 0 / 100% no-repeat;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
@@ -369,6 +369,9 @@ textarea.form__input{
 .checkbox__label a {
   color: green;
 }
+.checkbox__label span {
+  color: red;
+}
 
 
 .form__button {
@@ -452,8 +455,114 @@ textarea.form__input{
 	transform: rotate(45deg);
 	left: -4px;
 }
+/* ------------------------------FOOTER SECTION----------------------- */
+/* Убрать высоту после наполнения контентом */
+.footer {
+  text-align: center;
+  height: 220px;
+  background: url('/img/BG/bg-pattern-1.png') repeat;
+}
+.footer__body {
+/*   display: flex; */
+  margin-top: 30px;
+  color: #fff;
+  font-weight: 500;
+}
 
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
+/* -----------------------------------ТЕЛЕФОНЫ ДЛЯ СВЯЗИ */
+.phone__block {
+  display: flex;
+  flex-direction: row;
+  vertical-align: top;
+
+}
+.phones__title {
+  padding: 5px;
+  margin: 4px;
+}
+
+.phones__line {
+  border-left: 1px solid #fff;
+  height: 80%;
+  margin-top: 9px;
+}
+
+.phones__phones {
+  text-align: left;
+  padding: 5px;
+}
+
+.phones__phones p {
+  margin: 4px;
+}
+
+/*---------------------------------- ЧАСЫ РАБОТЫ */
+.worktime__block {
+  display: flex;
+  flex-direction: row;
+}
+.worktime__title {
+  padding: 5px;
+  margin: 4px;
+}
+.worktime__line {
+  border-left: 1px solid #fff;
+  height: 35%;
+  margin-top: 9px;
+}
+
+.worktime__worktime {
+  text-align: left;
+  padding: 5px;
+}
+
+.worktime__worktime p {
+  margin: 4px;
+}
+
+/* -------------------------------ИНТЕРНЕТ АДРЕСА */
+.webaddress__line {
+  border-left: 1px solid #fff;
+  height: 33%;
+  margin-top: 12px;
+}
+.webaddress__block {
+  display: flex;
+  text-align: left;
+}
+.webaddress__address {
+  padding: 5px;
+}
+.webaddress__address p {
+  margin: 4px;
+}
+.webaddress__address span {
+  color: var(--brandColor);
+}
+/* -------------------------------БРЕНД И КОПИРАЙТ */
+.footer__column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.barand__image {
+  margin-right: 30px;
+}
+.brand__year {
+  font-size: 34px;
+  font-weight: 900;
+}
+.brand__year span {
+  color: var(--brandColor);
+}
+.brand__copyright {
+}
 
 
 
