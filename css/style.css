@@ -185,6 +185,7 @@
 .slider {
   position: relative;
   padding: 20px 50px;
+  margin-top: 120px;
 }
 .slider .slick-arrow{
   position: absolute;
@@ -316,21 +317,50 @@
 
 
 /*-----------------------------Feedback form section----------------------------------- */
+
+
 .back__form {
   margin: 0 auto;
-  max-width: 550px; /* 550px */
+  margin-top: 120px;
+  max-width: 760px; /* 550px */
   color: #6B6B6B;
-  padding: 30px 0;
+  border: 2px solid #C4C4C4;
+  border-radius: 12px;
+  min-height: 680px;
 }
 
-.form__title {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 30px;
+/* .back__form {
+  background: #C4C4C4;
+} */
+.form__titleblock {
+  color: #fff;
+}
+
+.form__titleblock p {
+  background-color: #C4C4C4;
+  letter-spacing: 2%;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 15px;
   text-align: center;
 }
+.form__titleblock h2 {
+  line-height: 145%;
+  padding: 10px;
+  background-color: #C4C4C4;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+}
+.form__input::placeholder {
+  color: #C4C4C4;
+}
 .form__item {
-  margin-bottom: 20px;
+  margin: 15px;
+  padding: 5px;
 }
 /* Имена полей воода */
 .form__label {
@@ -344,6 +374,7 @@
   font-size: 18px;
   border-radius: 5px;
   width: 100%;
+  background-color: #c4c4c41a;
   border: 1px solid #C4C4C4;
   transition: all .5s ease 0s;
 }
@@ -353,9 +384,9 @@
 
 /*TODO Сделать красный рекваиред только после невалидных данных */
 
-/* :required {                 
+/*  :required:hover {                 
   box-shadow: 0 0 5px red;
-} */
+}  */
 
 textarea.form__input{
   min-height: 120px;
@@ -377,14 +408,15 @@ textarea.form__input{
 
 
 .form__button {
-  width: 100%;
+  width: 94%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  height: 67px;
+  height: 57px;
   border-radius: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -393,14 +425,14 @@ textarea.form__input{
   box-shadow: 0 5px 10px #456362;
   transition: background-color 0.5s ease 0s;
   position: relative;
-  top: 0;
+  top: 0px;
 }
 
 .form__button:hover {
   background-color: #5b8584;
 }
 .form__button:active {
-  top: 3px;
+  top: 6px;
   box-shadow: 0 2px 0px #456362;
 }
 

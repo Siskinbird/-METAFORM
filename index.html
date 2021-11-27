@@ -151,16 +151,19 @@
 
             <!-- Feedback section -->
             <section class="back__form">
+                <div class="form__titleblock"><h2>Остались вопросы?</h2>
+                    <p> Оставьте Ваши контактные данные и мы обязательно свяжемся с вами!</p>
+                </div>
                 <form  action="sender.php" method="post">
-                    <h2 class="form__title">Остались вопросы?<br> Мы Вам перезвоним!</h2>
+
                     <div class="form__item">
-                        <input type="text" name="name" class="form__input" placeholder="Имя..." required>
+                        <input type="text" name="name" class="form__input" placeholder="Введите имя:" required>
                     </div>
                     <div class="form__item">
-                        <input type="email" name="email" class="form__input" placeholder="E-mail..." required>
+                        <input type="email" name="email" class="form__input" placeholder="Введите Ваш e-mail:" required>
                     </div>
                     <div class="form__item">
-                        <input id="phone" name="phone" type="text" class="form__input" placeholder="Телефон">
+                        <input id="phone" name="phone" type="text" class="form__input" placeholder="Контактный телефон:">
                     </div>
                     <div class="form__item">
                         <textarea name="message" placeholder="Сообщение:" class="form__input"></textarea>
