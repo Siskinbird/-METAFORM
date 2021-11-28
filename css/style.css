@@ -106,7 +106,7 @@
 /* -------------------------------------HEADER SECTION--------------------------------- */
 
 .header {
-    background: url("/metaform/img/bg/bgpattern2.png") repeat;
+    background: url("/metaform/img/bgpattern2.png") repeat;
     box-shadow: 0px 6px 14px -5px rgba(0, 0, 51, 0.2);
 }
 
@@ -321,16 +321,24 @@
 
 .back__form {
   margin: 0 auto;
-  margin-top: 120px;
   max-width: 760px; /* 550px */
   color: #6B6B6B;
+  background-color: #fff;
   border: 2px solid #C4C4C4;
   border-radius: 12px;
   min-height: 680px;
+  position: relative;
+}
+
+.test__back {
+  padding: 30px 0px;
+  width: 100%;
+  height: 780px;
+  background-color: #F1F1F1;
 }
 
 /* .back__form {
-  background: #C4C4C4;
+  background: ;
 } */
 .form__titleblock {
   color: #fff;
@@ -351,6 +359,7 @@
   font-size: 28px;
   font-weight: 600;
   text-align: center;
+  border: 2px solid #c4c4c4;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
