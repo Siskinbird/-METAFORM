@@ -1,6 +1,10 @@
 jQuery(document).ready(function () {
      $('.slider').slick({
-		 dots:true
+		 dots: true,
+		 autoplay: true,
+		 speed: 1000,
+		 adaptiveHeight: true,
+		 variableWidth: true
 	 });
      $("#phone").mask("+7 (999) 999-9999"); 
     

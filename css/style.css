@@ -95,6 +95,7 @@
     min-height: 100%;
     overflow: hidden;
     flex-direction: column;
+    min-width: 0%;
 }
 
 .container {
@@ -183,10 +184,13 @@
 /* ----------------------------------------SLIDER SECTION------------------------------------ */
 
 .slider {
+/*   display: flex;
+  min-width: 0; */
   position: relative;
   padding: 20px 50px;
-  margin-top: 120px;
+  margin-top: 80px;
 }
+
 .slider .slick-arrow{
   position: absolute;
   top: 50%;
@@ -209,6 +213,8 @@
 /* Лента слайдов */
 .slick-track{
   display: flex;
+  align-items: flex-start;
+  min-width: 0;
 }
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
@@ -220,6 +226,7 @@
   right: 0;
   background: url("/metaform/img/sliderphoto/arrowright.svg") 0 0 / 100% no-repeat;
 }
+
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
 /* Точки (булиты) */
@@ -466,6 +473,7 @@
 
 /*-----------------------------Feedback form section----------------------------------- */
 
+/* TODO Сделать тени у формвы */
 
 .back__form {
   margin: 0 auto;
