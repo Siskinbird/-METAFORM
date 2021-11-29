@@ -266,11 +266,56 @@
 /* ----------------------------------------END OF SLIDER SECTION------------------------------------ */
 
 
+/* ---------------------------------------------ABOUT SECTION-------------------------------------- */
+
+.about {
+  text-align: left;
+}
+
+.about__title h2 {
+  font-size: 42px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+  margin-bottom: 65px;
+}
+.about__title span {
+  color: var(--brandColor);
+}
+.about__subtitle {
+  padding: 0 20px;
+}
+
+.about__subtitle p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 145%;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+/* ---------------------------------------------END OF ABOUT SECTION-------------------------------------- */
+
+
+
 /* ----------------------------------------SERVICES SECTION---------------------------------- */
 
 /* TODO Очень сомнительный дизайн, надо будет обговорить нормальные современные карточик */
 .services {
   margin-top: 120px;
+}
+
+.servise__title h1 {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 145%;
+  text-align: center;
+  margin: 115px 0px;
+  padding: 5px 170px;
+  text-transform: uppercase;
 }
 
 .service__body {
@@ -300,7 +345,7 @@
 }
 
 .item__text {
-  padding: 20px;
+  padding: 10px;
   margin-right: 10px;
   text-transform: uppercase;
   font-size: 16px;
@@ -325,12 +370,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px 0;
+  padding: 60px 0;
+  margin: 0 auto;
 }
 .contacts__body h1 {
   font-size: 42px;
   text-align: center;
   padding-bottom: 25px;
+  margin-bottom: 50px;
 }
 
 .address__item {
