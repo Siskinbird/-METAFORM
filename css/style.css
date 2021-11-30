@@ -95,19 +95,19 @@
     min-height: 100%;
     overflow: hidden;
     flex-direction: column;
-    min-width: 0%;
+    min-width: 0;
 }
 
 .container {
    max-width: 1170px;
    margin: 0 auto;
-   padding: 0px 20px;
+   padding: 0px 10px;
 }
 
 /* -------------------------------------HEADER SECTION--------------------------------- */
 
 .header {
-    background: url("/metaform/img/bgpattern2.png") repeat;
+    background: url("../img/bgpattern2.png") repeat;
     box-shadow: 0px 6px 14px -5px rgba(0, 0, 51, 0.2);
 }
 
@@ -181,6 +181,21 @@
 .main {
   flex: 1 1 auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------SLIDER SECTION------------------------------------ */
 
 .slider {
@@ -190,7 +205,10 @@
   padding: 20px 50px;
   margin-top: 80px;
 }
-
+.slider__item img {
+  max-width: 934px;
+  min-width: 40%;
+}
 .slider .slick-arrow{
   position: absolute;
   top: 50%;
@@ -213,18 +231,21 @@
 /* Лента слайдов */
 .slick-track{
   display: flex;
-  align-items: flex-start;
-  min-width: 0;
+  align-items: flex-end;
+  margin: 0 auto;
 }
 /* Стрелка влево */
 .slider .slick-arrow.slick-prev {
-  left: 0;
-  background: url('/metaform/img/sliderphoto/arrowleft.svg') 0 0 / 100% no-repeat;
+  left: 38%;
+  top: 96%;
+  background: url('../img/sliderphoto/arrowleft.svg') 0 0 / 100% no-repeat;
+  margin-left: 60px;
 }
 /* Стрелка вправо */
 .slider .slick-arrow.slick-next {
-  right: 0;
-  background: url("/metaform/img/sliderphoto/arrowright.svg") 0 0 / 100% no-repeat;
+  right: 43%;
+  top: 96%;
+  background: url("../img/sliderphoto/arrowright.svg") 0 0 / 100% no-repeat;
 }
 
 /* Стрелка не активная */
@@ -238,17 +259,20 @@
 .slider .slick-dots li{
   list-style: none;
   margin: 0 5px;
+
 }
 /* Активная точка */
 .slider .slick-dots li.slick-active button {
   background-color: transparent;
   border: 1px solid var(--brandColor);
+  margin-top: 5px;
 }
 /* Элемент точки */
 .slider .slick-dots li button{
   font-size: 0;
-  width: 15px;
-  height: 15px;
+  width: 19px;
+  height: 19px;
+
   background-color: var(--brandColor);
   border-radius: 50%;
 }
@@ -265,6 +289,32 @@
 .slick-slide.slick-cloned{}
 /* Стрелка */
 .slick-arrow{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -392,7 +442,6 @@
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
-  
 }
 .address__item h2 {
   font-size: 16px;
@@ -414,9 +463,6 @@
   max-width: 100%;
   overflow: hidden;
   border-radius: 8px;
-}
-.map img {
-  
 }
 
 .address {
@@ -665,7 +711,7 @@ textarea.form__input{
 
 .footer {
   text-align: center;
-  background: url("/metaform/img/bgpattern1.png") repeat;
+  background: url("../img/bgpattern1.png") repeat;
 }
 
 .footer__body {

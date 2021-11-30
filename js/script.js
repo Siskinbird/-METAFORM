@@ -1,10 +1,31 @@
 jQuery(document).ready(function () {
      $('.slider').slick({
 		 dots: true,
-		 autoplay: true,
+		 autoplay: false,
 		 speed: 1000,
-		 adaptiveHeight: true,
-		 variableWidth: true
+		 adaptiveHeight: false,
+		 variableWidth: true,
+		 slidesToShow: 1,
+		 centerMode: true,
+		 responsive: [{
+			breakpoint: 1025,
+			settings: {
+			  arrows: true,
+			  centerMode: true,
+			  slidesToScroll: 1
+			}
+		  }/* ,{
+			breakpoint: 768,
+			settings: {						
+			  arrows: false,
+			  slidesToShow: 1,
+			  slidesToScroll: 1
+			}
+		  } */]			
+
+/* 		 rows: 1,
+		 slidesPerRow: 1 */
+/* 		 fade: true */
 	 });
      $("#phone").mask("+7 (999) 999-9999"); 
     
@@ -25,7 +46,6 @@ jQuery(document).ready(function () {
     				form.html(data);
     				form.css('opacity','1');
                     form.find('.status').html('форма отправлена успешно');
-                    //$('#myModal').modal('show') // для бутстрапа
     			},
     			error:	 function() {
     			     form.find('.status').html('серверная ошибка');
