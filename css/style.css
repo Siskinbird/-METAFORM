@@ -595,9 +595,9 @@
 
 /*TODO Сделать красный рекваиред только после невалидных данных */
 
-/*  :required:hover {                 
+ :required:hover {                 
   box-shadow: 0 0 5px red;
-}  */
+} 
 
 textarea.form__input{
   min-height: 120px;
@@ -713,11 +713,13 @@ textarea.form__input{
   text-align: center;
   background: url("../img/bgpattern1.png") repeat;
 }
-
+.footer a {
+  color: #fff;
+}
 .footer__body {
-  margin-top: 30px;
   color: #fff;
   font-weight: 500;
+  padding-top: 18px;
 }
 
 .footer__row {

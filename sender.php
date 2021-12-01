@@ -4,7 +4,7 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    $to = "dimachig@gmail.com";
+    $to = "info@metaform.ru";
     $date = date("d.m.Y");
     $time = date ("h:i");
     $from = $email;
