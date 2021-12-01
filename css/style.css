@@ -24,7 +24,6 @@
   
   html, body {
     height: 100%;
-    /* width: 100%; */
     font-size: 100%;
     line-height: 1;
     font-size: 14px;
@@ -34,14 +33,6 @@
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
-
-/* body {
-  height: 100vh;
-  background-color: #a7c1b5;
-  background-image: radial-gradient(#ffeede 1px, rgba(255, 255, 255, 0) 1px);
-  background-size: 5px 5px;
-} */
-
 
   input, button, textarea {
     font-family: inherit;
@@ -199,15 +190,12 @@
 /* ----------------------------------------SLIDER SECTION------------------------------------ */
 
 .slider {
-/*   display: flex;
-  min-width: 0; */
   position: relative;
   padding: 20px 50px;
   margin-top: 80px;
 }
 .slider__item img {
-  max-width: 934px;
-  min-width: 40%;
+  max-width:100%;
 }
 .slider .slick-arrow{
   position: absolute;
@@ -519,17 +507,17 @@
 
 /*-----------------------------Feedback form section----------------------------------- */
 
-/* TODO Сделать тени у формвы */
-
 .back__form {
   margin: 0 auto;
-  max-width: 760px; /* 550px */
+  max-width: 760px;
   color: #6B6B6B;
   background-color: #fff;
   border: 2px solid #C4C4C4;
   border-radius: 12px;
   min-height: 680px;
   position: relative;
+  box-shadow: 0 0 5px var(--brandColor);
+
 }
 
 .test__back {
@@ -539,9 +527,6 @@
   background-color: #F1F1F1;
 }
 
-/* .back__form {
-  background: ;
-} */
 .form__titleblock {
   color: #fff;
 }
@@ -574,6 +559,9 @@
   padding: 5px;
 }
 /* Имена полей воода */
+label.error {
+  display: none!important;
+}
 .form__label {
   font-size: 18px;
   display: block;
@@ -592,12 +580,10 @@
 .form__input:focus {
   box-shadow: 0 0 15px var(--brandColor);
 }
-
-/*TODO Сделать красный рекваиред только после невалидных данных */
-
- :required:hover {                 
+form input.error {
+  border-color: red;
   box-shadow: 0 0 5px red;
-} 
+}
 
 textarea.form__input{
   min-height: 120px;
@@ -703,8 +689,6 @@ textarea.form__input{
 }
 
 
-
-/* TODO Облепить footer ссылками (tel:  mailto:) */ 
 
 /* TODO Ностроить врап, криво отображается после 650px */
 /* ------------------------------FOOTER SECTION----------------------- */

@@ -1,7 +1,7 @@
 jQuery(document).ready(function () {
      $('.slider').slick({
 		 dots: true,
-		 autoplay: false,
+		 autoplay: true,
 		 speed: 1000,
 		 adaptiveHeight: false,
 		 variableWidth: true,
@@ -14,18 +14,7 @@ jQuery(document).ready(function () {
 			  centerMode: true,
 			  slidesToScroll: 1
 			}
-		  }/* ,{
-			breakpoint: 768,
-			settings: {						
-			  arrows: false,
-			  slidesToShow: 1,
-			  slidesToScroll: 1
-			}
-		  } */]			
-
-/* 		 rows: 1,
-		 slidesPerRow: 1 */
-/* 		 fade: true */
+		  }]		
 	 });
      $("#phone").mask("+7 (999) 999-9999"); 
     
