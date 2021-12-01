@@ -8,7 +8,7 @@
     $date = date("d.m.Y");
     $time = date ("h:i");
     $from = $email;
-    $subject = "Заявка с сайта";
+    $subject = "Заявка с сайта metaform.ru";
 
     $msg="
     Дата: $date /n
