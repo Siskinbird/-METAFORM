@@ -26,7 +26,7 @@
     height: 100%;
     font-size: 100%;
     line-height: 1;
-    font-size: 14px;
+    font-size: 10px;
     color: #6B6B6B;
     font-family: "Montserrat";
     -ms-text-size-adjust: 100%;
@@ -121,6 +121,7 @@
     width: 215px;
     text-align: left;
     text-transform: uppercase;
+    font-size: 1.4em;
     font-weight: 550;
     line-height: 145%;
 }
@@ -138,7 +139,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-size: 20px;
+    font-size: 2em;
     padding: 16px 5px 5px 5px;
 }
 
@@ -149,6 +150,7 @@
 .menu__list {
     display: flex;
     align-items: center;
+    font-size: 1.4em;
 }
 
 .menu__list li{
@@ -321,7 +323,7 @@
 }
 
 .about__title h2 {
-  font-size: 42px;
+  font-size: 4.2em;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
@@ -336,7 +338,7 @@
 }
 
 .about__subtitle p {
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 400;
   line-height: 145%;
   letter-spacing: 1px;
@@ -357,7 +359,7 @@
 }
 
 .servise__title h1 {
-  font-size: 42px;
+  font-size: 4.2em;
   font-weight: 500;
   line-height: 145%;
   text-align: center;
@@ -378,13 +380,17 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 480px;
+  max-width: 480px;
   height: 125px;
   border: 2px solid #C4C4C4;
   border-radius: 12px;
   margin-bottom: 24px;
-}
 
+}
+.service__item:hover {
+  box-shadow: 0 0 10px #6B6B6B;
+  transition: .5s;
+}
 
 
 .item__logo {
@@ -396,7 +402,7 @@
   padding: 10px;
   margin-right: 10px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 600;
   line-height: 145%;
   letter-spacing: 4.5%;
@@ -435,25 +441,18 @@
   text-transform: uppercase;
 }
 .address__item h2 {
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 800;
   color: #6B6B6B;
   line-height: 118%;
 }
 
 .address__item p {
-  font-size: 16px;
+  font-size: 1.6em;
   font-weight: 500;
   color: #6B6B6B;
   line-height: 145%;
   margin-top: 20px;
-}
-.address__item img {
-  width: 470px;
-  height: 225px;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 8px;
 }
 
 .address {
@@ -466,6 +465,16 @@
   background-color: #F1F1F1;
   margin: 10px;
   text-align: left;
+}
+
+.address:hover {
+  box-shadow: 0 0 10px #6B6B6B;
+  transition: .5s;
+}
+.map:hover {
+  box-shadow: 0 0 10px #6B6B6B;
+  transition: .5s;
+  border-radius: 8px;
 }
 
 .moscow__ {
@@ -513,6 +522,7 @@
 .back__form {
   margin: 0 auto;
   max-width: 760px;
+  margin-top: 45px;
   color: #6B6B6B;
   background-color: #fff;
   border: 2px solid #C4C4C4;
@@ -520,7 +530,6 @@
   min-height: 680px;
   position: relative;
   box-shadow: 0 0 5px var(--brandColor);
-
 }
 
 .test__back {
@@ -537,7 +546,7 @@
 .form__titleblock p {
   background-color: #C4C4C4;
   letter-spacing: 2%;
-  font-size: 18px;
+  font-size: 1.8em;
   font-weight: 500;
   padding: 15px 15px;
   text-align: center;
@@ -546,7 +555,7 @@
   line-height: 145%;
   padding: 10px;
   background-color: #C4C4C4;
-  font-size: 28px;
+  font-size: 2.8em;
   font-weight: 600;
   text-align: center;
   border: 2px solid #c4c4c4;
@@ -566,14 +575,14 @@ label.error {
   display: none!important;
 }
 .form__label {
-  font-size: 18px;
+  font-size: 1.8em;
   display: block;
   margin-bottom: 10px;
 }
 .form__input {
   height: 50px;
   padding: 0 20px;
-  font-size: 18px;
+  font-size: 1.8em;
   border-radius: 5px;
   width: 100%;
   background-color: #c4c4c41a;
@@ -613,7 +622,7 @@ textarea.form__input{
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  font-size: 18px;
+  font-size: 1.8em;
   font-weight: 700;
   cursor: pointer;
   height: 57px;
@@ -699,6 +708,7 @@ textarea.form__input{
 .footer {
   text-align: center;
   background: url("../img/bgpattern1.png") repeat;
+  font-size: 14px;
 }
 .footer a {
   color: #fff;
@@ -807,7 +817,7 @@ textarea.form__input{
 }
 
 .brand__year {
-  font-size: 34px;
+  font-size: 3.4em;
   font-weight: 900;
 }
 .brand__copyright span {
@@ -819,7 +829,7 @@ textarea.form__input{
   left: 40px;
   top: -10px;
   color: #C4C4C4;
-  font-size: 12px;
+  font-size: 1.2em;
 }
 .brand__copyright .ico {
   width: 15px;
@@ -874,7 +884,7 @@ textarea.form__input{
   }
   .item__text {
     width: 330px;
-    font-size: 14px;
+    font-size: 1.4em;
     margin-right: 0;
   }
 }
