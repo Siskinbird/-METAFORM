@@ -157,7 +157,6 @@
     margin-right: 30px;
 }
 
-/* link animation */
 
 .menu__list a {
     text-decoration: none;
@@ -178,20 +177,6 @@
   flex: 1 1 auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------------------SLIDER SECTION------------------------------------ */
 
 .slider {
@@ -211,13 +196,6 @@
   width: 30px;
   height: 50px;
 }
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
@@ -241,8 +219,6 @@
   background: url("../img/sliderphoto/arrowright.svg") 0 0 / 100% no-repeat;
 }
 
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
 /* Точки (булиты) */
 .slider .slick-dots{
   display: flex;
@@ -269,49 +245,6 @@
   background-color: var(--brandColor);
   border-radius: 50%;
 }
-
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ----------------------------------------END OF SLIDER SECTION------------------------------------ */
 
@@ -348,7 +281,6 @@
 
 
 /* ---------------------------------------------END OF ABOUT SECTION-------------------------------------- */
-
 
 
 /* ----------------------------------------SERVICES SECTION---------------------------------- */
@@ -415,10 +347,6 @@
 
 /* -------------------------------CONTACTS SECTION-------------------------------------- */
 
-
-.contacts {
-
-}
 .contacts__body {
   display: flex;
   align-items: center;
@@ -477,65 +405,27 @@
   border-radius: 8px;
 }
 
-.moscow__ {
-}
-.moscow__title {
-}
-.moscow__subtitle {
-}
-.moscow__map {
-}
-.orel__adress {
-}
-.orel__title {
-}
-.orel__subtitle {
-}
-.orel__map {
-}
-
-
-
 /* -------------------------------END OF CONTACTS SECTION-------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-----------------------------Feedback form section----------------------------------- */
 
 .back__form {
   margin: 0 auto;
   max-width: 760px;
-  margin-top: 45px;
+/*   margin-top: 45px; */
   color: #6B6B6B;
   background-color: #fff;
   border: 2px solid #C4C4C4;
   border-radius: 12px;
   min-height: 680px;
-  position: relative;
+
   box-shadow: 0 0 5px var(--brandColor);
 }
 
 .test__back {
-  padding: 30px 0px;
+  padding-top: 45px;
   width: 100%;
-  height: 780px;
+  height: 825px;
   background-color: #F1F1F1;
 }
 
@@ -633,7 +523,7 @@ textarea.form__input{
   color: #fff;
   box-shadow: 0 5px 10px #456362;
   transition: background-color 0.5s ease 0s;
-  position: relative;
+/*   position: relative; */
   top: 0px;
 }
 
@@ -822,23 +712,20 @@ textarea.form__input{
 }
 .brand__copyright span {
   color: var(--brandColor);
-  margin-right:5px;
+  margin-right: 5px;
 }
 .brand__copyright {
   position: relative;
   left: 40px;
   top: -10px;
   color: #C4C4C4;
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 .brand__copyright .ico {
   width: 15px;
   height: 15px;
   margin: 0;
 }
-
-
-
 
 /* ------------------------------------------------BUTTON UP */
 #button-up{
@@ -864,11 +751,6 @@ textarea.form__input{
   color: #FF0000;
 }
 /* ------------------------------------------------END OF BUTTON UP */
-
-
-
-
-
 
 
 

@@ -20,4 +20,4 @@
     mail($to, $subject, $msg, "From: $from ");
 ?>
 
-<p>Сообщение отправленно, мы свяжемся с вами в ближайшее время</p>
+<div><img src="/img/success1.png" alt=""></div>
