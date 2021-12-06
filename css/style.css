@@ -752,6 +752,49 @@ textarea.form__input{
 }
 /* ------------------------------------------------END OF BUTTON UP */
 
+@media(max-width: 768px) {
+  .header__row {
+    justify-content: space-around;
+    height: 160px;
+  }
+  .address__item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0px 10px;
+ }
+ .contacts__body h1 {
+   margin: 30px 0;
+ }
+ .address {
+   margin: 20px 0;
+ }
+ .test__back {
+   margin-top: 60px;
+ }
+ .slider {
+   margin-top: 45px;
+ }
+ .slider__item img {
+   max-width: 750px;
+   height: auto;
+ }
+ .servise__title h1 {
+   font-size: 2.8em;
+   margin: 60px 0;
+ }
+ .slider .slick-arrow.slick-prev {
+   left: 32%;
+   top: 100%;
+ }
+ .slider .slick-arrow.slick-next {
+   right: 40%;
+   top: 100%;
+ }
+}
 
 
 
@@ -768,5 +811,8 @@ textarea.form__input{
     width: 330px;
     font-size: 1.4em;
     margin-right: 0;
+  }
+  .slider {
+    display: none;
   }
 }
