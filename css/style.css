@@ -112,6 +112,9 @@
     align-items: center;  
     flex-wrap: wrap;  
 }
+.header__burger {
+  display: none;
+}
 
 .brand {
     padding: 5px;
@@ -181,7 +184,7 @@
 
 .slider {
   position: relative;
-  padding: 20px 50px;
+  padding: 120px 50px;
   margin-top: 80px;
 }
 .slider__item img {
@@ -285,7 +288,7 @@
 
 /* ----------------------------------------SERVICES SECTION---------------------------------- */
 
-/* TODO Очень сомнительный дизайн, надо будет обговорить нормальные современные карточик */
+
 .services {
   margin-top: 120px;
 }
@@ -590,9 +593,6 @@ textarea.form__input{
 	left: -4px;
 }
 
-
-
-/* TODO Ностроить врап, криво отображается после 650px */
 /* ------------------------------FOOTER SECTION----------------------- */
 
 .footer {
@@ -752,7 +752,7 @@ textarea.form__input{
 }
 /* ------------------------------------------------END OF BUTTON UP */
 
-@media(max-width: 768px) {
+@media(max-width: 878px) {
   .header__row {
     justify-content: space-around;
     height: 160px;
@@ -798,7 +798,7 @@ textarea.form__input{
 
 
 
-@media(max-width: 511px) {
+/* @media(max-width: 511px) {
   .item__logo {
     display: none;
   }
@@ -815,4 +815,145 @@ textarea.form__input{
   .slider {
     display: none;
   }
+} */
+
+
+@media(max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .container {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0px 5px;
+ }
+ .slider {
+  display: none;
+}
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+/*     background: url("../img/bgpattern1.png") repeat; */
+  }
+
+  .header__contacts {
+    display: none;
+  }
+
+  .brand img {
+    max-width: 100%;
+    z-index: 3;
+    position: relative;
+    flex: 0 0 60px;
+  }
+  .description {
+    display: none;
+  }
+  .header__row {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 6;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+
+
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-right: 6px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: var(--brandColor);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px; 
+    transition: all .3s ease 0s;   
+  }
+
+
+  .header__burger::before,
+  .header__burger::after {
+    content: '';
+    background-color: var(--brandColor);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all .3s ease 0s;  
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bgpattern2.png") repeat;
+    padding: 80px 10px 20px 10px;
+    transition: all .3s ease 0s;   
+    overflow: auto;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .menu__list {
+    display: block;
+  }
+  .menu__list li {
+    margin: 0px 0px 20px 0px;
+    text-align: right;
+  }
+
+  .menu__list a {
+    font-weight: 600;
+    color: var(--brandColor);
+  }
+
+
+
+
+
 }
