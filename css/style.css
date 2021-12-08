@@ -184,7 +184,7 @@
 
 .slider {
   position: relative;
-  padding: 120px 50px;
+  padding: 19px 50px;
   margin-top: 80px;
 }
 .slider__item img {
@@ -599,6 +599,7 @@ textarea.form__input{
   text-align: center;
   background: url("../img/bgpattern1.png") repeat;
   font-size: 14px;
+  overflow: hidden;
 }
 .footer a {
   color: #fff;
@@ -798,24 +799,78 @@ textarea.form__input{
 
 
 
-/* @media(max-width: 511px) {
+@media(max-width: 375px) {
+  .servise__title h1 {
+    padding: 0;
+    font-size: 2.2em;
+    margin-top: -60px;
+  }
+  .about p {
+    text-align: center;
+  }
   .item__logo {
     display: none;
   }
-  .service__item {
-    margin-bottom: 16px;
-    min-width: 70%;
-    padding: 5px;
-  }
   .item__text {
-    width: 330px;
-    font-size: 1.4em;
-    margin-right: 0;
+    margin: 5px;
   }
-  .slider {
+  .address {
+    width: 90%;
+    padding: 10px;
+  }
+  .map {
+    width: 90%;
+  }
+  .about__title h2 {
+    font-size: 2.8em;
+    margin-top: 100px;
+    margin-bottom: 45px;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+@media(max-width: 320px) {
+  .about__subtitle {
+    padding: 0;
+  }
+  .service__item {
+    width: 94%;
+  }
+}
+
+@media(max-width: 425px) {
+  .about p {
+    text-align: center;
+  }
+  .item__logo {
     display: none;
   }
-} */
+  .item__text {
+    margin: 5px;
+  }
+  .servise__title h1 {
+    padding: 0;
+    font-size: 2.2em;
+    margin-top: -60px;
+  }
+  .address {
+    width: 90%;
+    padding: 10px;
+  }
+  .map {
+    width: 90%;
+  }
+  .about__title h2 {
+    font-size: 2.8em;
+    margin-top: 100px;
+    margin-bottom: 45px;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
 
 
 @media(max-width: 767px) {
@@ -829,14 +884,14 @@ textarea.form__input{
  }
  .slider {
   display: none;
-}
+ }
   .header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 0;
-/*     background: url("../img/bgpattern1.png") repeat; */
+
   }
 
   .header__contacts {
@@ -870,9 +925,6 @@ textarea.form__input{
     height: 100%;
     z-index: 2;
   }
-
-
-
 
   .header__burger {
     display: block;
@@ -941,6 +993,7 @@ textarea.form__input{
 
   .menu__list {
     display: block;
+    font-size: 2.4em;
   }
   .menu__list li {
     margin: 0px 0px 20px 0px;
@@ -951,9 +1004,4 @@ textarea.form__input{
     font-weight: 600;
     color: var(--brandColor);
   }
-
-
-
-
-
 }
