@@ -75,6 +75,9 @@
     font-size: inherit;
     font-weight: 400;
   }
+  details {
+    display: none;
+  }
 
 
   :root {
@@ -868,6 +871,24 @@ textarea.form__input{
   }
   iframe {
     width: 100%;
+  }
+  details {
+    display: block;
+    text-align: left;
+    padding: 5px;
+  }
+  details address p {
+    margin-top: 10px;
+  }
+  .footer__details {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .footer__row {
+    display: none;
+  }
+  .footer__column {
+    padding-left: 20px;
   }
 }
 
