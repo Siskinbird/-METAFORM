@@ -123,13 +123,13 @@
     padding: 5px;
 }
 
-.description {
-    width: 215px;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 550;
-    line-height: 145%;
+.description h1 {
+  width: 215px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 550;
+  line-height: 145%;
 }
 
 .ico {
@@ -296,7 +296,7 @@
   margin-top: 120px;
 }
 
-.servise__title h1 {
+.servise__title h2 {
   font-size: 4.2em;
   font-weight: 500;
   line-height: 145%;
@@ -336,7 +336,7 @@
   height: 102px;
 }
 
-.item__text {
+.item__text h3{
   padding: 10px;
   margin-right: 10px;
   text-transform: uppercase;
@@ -361,7 +361,7 @@
   padding: 60px 0;
   margin: 0 auto;
 }
-.contacts__body h1 {
+.contacts__body h2 {
   font-size: 42px;
   text-align: center;
   padding-bottom: 25px;
@@ -374,7 +374,7 @@
   justify-content: space-between;
   text-transform: uppercase;
 }
-.address__item h2 {
+.address__item h3 {
   font-size: 1.6em;
   font-weight: 800;
   color: #6B6B6B;
