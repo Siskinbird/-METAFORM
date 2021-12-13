@@ -803,7 +803,7 @@ textarea.form__input{
 
 
 @media(max-width: 375px) {
-  .servise__title h1 {
+  .servise__title h2 {
     padding: 0;
     font-size: 2.2em;
     margin-top: -60px;
@@ -852,7 +852,7 @@ textarea.form__input{
   .item__text {
     margin: 5px;
   }
-  .servise__title h1 {
+  .servise__title h2 {
     padding: 0;
     font-size: 2.2em;
     margin-top: -60px;
