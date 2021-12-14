@@ -815,7 +815,7 @@ textarea.form__input{
     display: none;
   }
   .item__text {
-    margin: 5px;
+    margin-left: 10px;
   }
   .address {
     width: 90%;
@@ -840,6 +840,12 @@ textarea.form__input{
   .service__item {
     width: 94%;
   }
+  .item__text h3 {
+    max-width: 70%;
+    padding: 5px 20px;
+    margin-left: 54px;
+  }
+
 }
 
 @media(max-width: 425px) {
@@ -850,7 +856,7 @@ textarea.form__input{
     display: none;
   }
   .item__text {
-    margin: 5px;
+    margin-left: 10px;
   }
   .servise__title h2 {
     padding: 0;
