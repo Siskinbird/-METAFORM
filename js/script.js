@@ -1,3 +1,18 @@
+
+new Swiper('.swiper', {
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	loop: true,
+	loopedSlides: 1,
+	spaceBetween: 300,
+	speed: 500,
+	simulateTouch: false,
+	allowTouchMove: false,
+  });
+
+
 jQuery(document).ready(function () {
      $('.slider').slick({
 		 dots: true,
@@ -72,3 +87,26 @@ jQuery(document).ready(function () {
     	}
     });
 });
+
+/* const swiper = new Swiper('.swiper', {
+	// Optional parameters
+	direction: 'vertical',
+	loop: true,
+  
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+	// And if we need scrollbar
+	scrollbar: {
+	  el: '.swiper-scrollbar',
+	},
+  }); */
+

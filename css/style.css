@@ -352,6 +352,35 @@
   border: 2px solid var(--brandColor);;
   border-radius: 12px;
 }
+/* -------------------------------SWIPER SLIDER-------------------------------------- */
+.swiper {
+  max-width: 100%;
+  height: auto;
+}
+.swiper-slide img{
+  max-width: 100%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-next {
+  background: url(../img/sliderphoto/arrowright.svg) 0 0 / 100% no-repeat;
+}
+
+.swiper-button-prev {
+  background: url(../img/sliderphoto/arrowleft.svg) 0 0 / 100% no-repeat;
+}
+
+#catalog h2 {
+  font-size: 4.2em;
+  font-weight: 500;
+  line-height: 145%;
+  text-align: center;
+  margin: 60px auto;
+}
 
 /* -------------------------------CONTACTS SECTION-------------------------------------- */
 
@@ -367,7 +396,7 @@
   font-size: 42px;
   text-align: center;
   padding-bottom: 25px;
-  margin-bottom: 50px;
+  margin: 60px auto;
 }
 
 .address__item {
